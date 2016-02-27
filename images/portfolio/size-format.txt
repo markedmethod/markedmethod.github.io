@@ -1,0 +1,3 @@
+small: 316 x 316 px  (will fit 6 images across 1920 px with 2px margin each side)
+large: set a default height
+

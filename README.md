@@ -1,2 +1,2 @@
-# markedmethod.github.io
-public landing page for marked method llc
+# marked-method
+business entity landing page
