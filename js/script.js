@@ -212,16 +212,26 @@ jQuery(document).ready(function ($) {
 	links.click(function (e) {
 		e.preventDefault();
 		dataslide = $(this).attr('data-slide');
-		goToByScroll(dataslide);
-		$(".nav-collapse").collapse('hide');
+		if(dataslide == "6"){
+			var url = $(this).find('a').attr('href');
+			window.open(url);
+		} else {
+			goToByScroll(dataslide);
+			$(".nav-collapse").collapse('hide');
+		}
 	});
 	
 	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
 	$('.navigation-slide').click(function (e) {
 		e.preventDefault();
 		dataslide = $(this).attr('data-slide');
-		goToByScroll(dataslide);
-		$(".nav-collapse").collapse('hide');
+		if (dataslide == "6") {
+			var url = $(this).find('a').attr('href');
+			window.open(url);
+		} else {
+			goToByScroll(dataslide);
+			$(".nav-collapse").collapse('hide');
+		}
 	});
 });
 

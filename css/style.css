@@ -288,14 +288,14 @@ body {
 	}
 	
 	#home-row-2 .col-12 .home-hover {
-		height: 170px;
+		height: 150px;
 		overflow: hidden;
 		padding-top: 25px;
-		transition: all ease-in .5s;
+		transition: all ease-in .3s;
 	}
 	
 	#home-row-2 .col-12 .home-hover:hover {
-		height: 170px;
+		height: 150px;
 		padding-top: 0;
 		padding-bottom: 30px;
 	}
