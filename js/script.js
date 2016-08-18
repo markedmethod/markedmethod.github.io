@@ -100,40 +100,30 @@ $(function() {
 		delay(function() {
 				var gallery_images = $('#slide-3 img');
 
-				var images_per_row = 8;
-				var window_width = $(window).width();
-				var img_width = Math.round(window_width/images_per_row) + "px";
-				//console.log(img_width);
-
-				//alert(window_width);
-
-				/*
+				//calculate number of images to place per row
 				if ( gallery_images.length % 2 == 0 ) {
 					images_per_row = gallery_images.length / 2;
 				} else {
 					images_per_row = gallery_images.length / 2 + 1;
 				}
 
-				*/
-				/*
-				var gallery_width = $('#slide-3 img').width() * $('#slide-3 img').length;
-				gallery_width /= 2;
+				//var images_per_row = 8;
+				var window_width = $(window).width();
+				var img_width = Math.round(window_width/images_per_row) + "px";
+				var gallery_width = $('#slide-3 img').width() * images_per_row /2;
+
 				if ( $('#slide-3 img').length % 2 != 0 ) {
 					gallery_width += $('#slide-3 img').width();
 				}
 
-				$('#slide-3 .row').css('width', gallery_width );
-				*/
 
 				var left_pos = $('#slide-3 .row').width() - $('body').width();
 				left_pos /= -2;
 
 				$('#slide-3 .row').css('left', left_pos);
+				$('#slide-3 .row').css('width', gallery_width );
+				//$('#slide-3 img').css('width', img_width);
 
-				/*
-				$('#slide-3 img').css('width', img_width);
-				$('#slide-3 img').css('height', img_width);
-				*/
 			},
 			pause
 		);
